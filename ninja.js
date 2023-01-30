@@ -12,7 +12,7 @@ class Ninja {
     showStats(){
         console.log('Nombre: '+ this.nombre);
         console.log('Stats: ');
-        console.log('Salud= ' + this.salud + ' - Velocidad= ' + this.velocidad + ' - Salud= ' + this.salud);
+        console.log('Salud= ' + this.salud + ' - Velocidad= ' + this.velocidad + ' - Fuerza= ' + this.salud);
     }
     drinkSake(){
         this.salud+=10;
