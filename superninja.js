@@ -12,7 +12,7 @@ class Ninja {
     showStats(){
         console.log('Nombre: '+ this.nombre);
         console.log('Stats: ');
-        console.log('Salud= ' + this.salud + ' - Velocidad= ' + this.velocidad + ' - Salud= ' + this.salud);
+        console.log('Salud= ' + this.salud + ' - Velocidad= ' + this.velocidad + ' - Fuerza= ' + this.salud);
     }
     drinkSake(){
         this.salud+=10;
@@ -30,8 +30,12 @@ class Sensei extends Ninja {
 
     speakWisdom(){
         super.drinkSake();
-        console.log('For man with no forgiveness in heart, life worse punishment than death.');
+        console.log('Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses.');
     }
 
 }
+    
+const superSensei = new Sensei("Master Splinter");
+superSensei.speakWisdom();
+superSensei.showStats();
 
