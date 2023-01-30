@@ -19,4 +19,19 @@ class Ninja {
     }
 }
 
+class Sensei extends Ninja {
+    constructor(nombre){
+        super(nombre);
+        this.salud = 210;
+        this.velocidad = 10;
+        this.fuerza = 10;
+        this.sabiduria = 10;
+    }
+
+    speakWisdom(){
+        super.drinkSake();
+        console.log('For man with no forgiveness in heart, life worse punishment than death.');
+    }
+
+}
 
